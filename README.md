@@ -24,5 +24,7 @@
 
 **Project Structure**
 **The project follows a clean separation of concerns with a client-server architecture:**
+
 **Client:** React-based SPA with component-based architecture
+
 **Server:** RESTful API with controllers, models, and middleware layers
