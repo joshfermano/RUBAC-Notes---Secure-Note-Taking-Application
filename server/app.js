@@ -7,12 +7,16 @@ import errorMiddleware from './middlewares/errorMiddleware.js';
 
 dotenv.config();
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5500;
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.json({ message: 'API is running successfully' });
+});
 
 // Routes
 app.use('/api/auth', authRoutes);
